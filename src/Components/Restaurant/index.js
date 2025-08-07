@@ -93,10 +93,8 @@ class Restaurant extends Component {
   }
 
   renderNavBar = () => {
-    const totalQuantity = this.state.cartList.reduce(
-      (sum, item) => sum + item.quantity,
-      0,
-    )
+    const {cartList} = this.state
+    const totalQuantity = cartList.reduce((sum, item) => sum + item.quantity, 0)
     return (
       <nav className="navBar">
         <h1>UNI Resto Cafe</h1>
@@ -143,9 +141,9 @@ class Restaurant extends Component {
   }
 
   renderDishItem = dish => {
+    const {cartList} = this.state
     const quantity =
-      this.state.cartList.find(item => item.dish_id === dish.dish_id)
-        ?.quantity || 0
+      cartList.find(item => item.dish_id === dish.dish_id)?.quantity || 0
 
     return (
       <li className="dishItem" key={dish.dish_id}>
