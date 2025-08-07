@@ -1,0 +1,138 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
+  /* background-color: red; */
+  align-items: center;
+}
+.innerNav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  position: relative;
+  /* padding: 20px; */
+  height: 60px;
+  width: 60px;
+}
+
+.cartCount {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  width: 24px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myOrder {
+  font-size: 18px;
+  color: rgb(66, 61, 61);
+  font-weight: 600;
+}
+.menuList {
+  list-style: none;
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+.menuItem {
+  font-size: 20px;
+  font-weight: 600;
+}
+.activeMenuItem {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+  border-bottom: 2px solid red;
+}
+.buttonMenu {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.activeBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: red;
+}
+.dishItem {
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.leftCont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 33%;
+}
+.imgCont {
+  height: 100%;
+  width: 33%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+}
+.img {
+  height: 100%;
+  width: 150px;
+}
+.buttonDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: rgb(74, 165, 74);
+  width: 130px;
+  border-radius: 25px;
+  color: white;
+}
+.quntBtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.Customization {
+  color: rgb(54, 135, 162);
+}
+.Calories {
+  color: orange;
+  font-size: 20px;
+}
+.available {
+  color: red;
+}
+.dishList {
+  padding: 20px;
+}
+.desc {
+  color: rgb(122, 122, 122);
+
+  font-size: 17px;
+}
+.midCont {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
